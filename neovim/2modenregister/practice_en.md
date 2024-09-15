@@ -11,6 +11,7 @@ We have a text file named `text`:
 5. Convert the 9th line to lowercase.
 6. Fix the last 3 words of the 16th line.
 7. Delete lines 11 through 14.
+8. Append line number for the 3rd line of text, we know that the expression to get the line number is `line('.')`
 
 ## Challenge
 
