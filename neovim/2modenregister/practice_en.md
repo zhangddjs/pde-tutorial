@@ -15,7 +15,7 @@ We have a text file named `text`:
 3. Adjust the line number at the beginning of the 6th line to the correct position.
 4. Correct the line numbers at the end of the 7th and 8th lines.
 5. Convert the 9th line to lowercase.
-6. Fix the last 3 words of the 16th line.
+6. Fix the last 4 words of the 16th line.
 7. Delete lines 11 through 14.
 8. Append line number for the last line of text by register, we know that the expression to get the line number is `line('.')`
 
