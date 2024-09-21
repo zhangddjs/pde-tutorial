@@ -27,7 +27,7 @@ Repeat the last change.
 
 ### Tip 3: Use Visual Mode Only When Necessary
 
-`daw` > `vawd`
+`daw` > `vawd`, `ciw` > `viwc`, `ciq` > `viqc`
 
 ### Tip 4: Step Back to Move Forward
 
