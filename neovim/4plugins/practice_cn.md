@@ -104,6 +104,14 @@ _HINT: 可参考example.lua的格式，或者查看minifiles插件的文档，�
 ```
 _HINT: 尝试探索一些功能和快捷键，比如<leader>，<c-w>等_
 
+7. 按思考题2的要求修改配置，实现MiniFiles的懒加载。
+
 ## 思考题
 
-目前大多数Neovim插件都在仓库主页提供了通过LazyVim进行安装的配置，但仍然有一些插件（比如Vim插件）没有提供，请大家挖掘规律，并尝试安装和卸载[vim-peekaboo插件](https://github.com/junegunn/vim-peekaboo)
+1. 目前大多数Neovim插件都在仓库主页提供了通过LazyVim进行安装的配置，但仍然有一些插件（比如Vim插件）没有提供，请大家挖掘规律，并尝试安装和卸载[vim-peekaboo插件](https://github.com/junegunn/vim-peekaboo)
+
+2. 当前配置的MiniFiles插件在Neovim启动时会自动加载（控制台中loaded状态），为了保障Neovim的启动效率，请修改配置，让MiniFiles懒加载，只有用户第一次按下<leader>e时才会被加载。
+已知懒加载三要素：
+(1) `require('mini.files').setup()`会初始化插件，想要实现懒加载，就不能在`init.lua`中调用，需要挪到`minifiles.lua`中
+(2) 懒加载配置项`lazy = true`
+(3) 插件加载的常用触发条件：Ex命令`cmd`配置项；快捷键`keys`配置项
