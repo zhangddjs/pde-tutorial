@@ -108,10 +108,10 @@ _HINT: Try exploring some functionalities and shortcuts like <leader>, <c-w>, et
 
 ## Challenge
 
-1. Most Neovim plugins provide LazyVim installation configurations on their repository homepage, but some (like Vim plugins) do not. Explore the patterns and try installing and uninstalling the [vim-peekaboo plugin](https://github.com/junegunn/vim-peekaboo).
-
-2. The current configuration for the MiniFiles plugin causes it to load automatically when Neovim starts (shown as "loaded" in the console). To improve Neovim's startup performance, modify the configuration to lazy-load MiniFiles, so that it only loads when the user presses `<leader>e` for the first time.
+1. The current configuration for the MiniFiles plugin causes it to load automatically when Neovim starts (shown as "loaded" in the console). To improve Neovim's startup performance, modify the configuration to lazy-load MiniFiles, so that it only loads when the user presses `<leader>e` for the first time.
 The three key components for lazy loading are:
 (1) `require('mini.files').setup()` initializes the plugin. To enable lazy loading, it should be moved out of `init.lua` and placed inside `minifiles.lua`.
 (2) The `lazy = true` configuration option is needed for lazy loading.
 (3) Common conditions for triggering plugin loading include `cmd` (Ex command) and `keys` (key mapping) options.
+
+2. Most Neovim plugins provide LazyVim installation configurations on their repository homepage, but some (like Vim plugins) do not. Explore the patterns and try installing and uninstalling the [vim-peekaboo plugin](https://github.com/junegunn/vim-peekaboo).
