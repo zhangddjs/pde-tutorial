@@ -104,7 +104,7 @@ _HINT: Try referring to the format used in example.lua, or check the documentati
 ```
 _HINT: Try exploring some functionalities and shortcuts like <leader>, <c-w>, etc._
 
-7. Modify the configuration according to **Challenge 2** to enable lazy loading for MiniFiles.
+7. Modify the configuration according to **Challenge 1** to enable lazy loading for MiniFiles.
 
 ## Challenge
 
