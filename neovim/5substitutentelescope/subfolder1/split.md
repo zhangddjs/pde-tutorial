@@ -1,0 +1,1 @@
+# open me in a split window from telescope
