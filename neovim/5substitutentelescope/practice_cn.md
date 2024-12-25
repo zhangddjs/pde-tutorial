@@ -48,7 +48,6 @@ _HINT1: 已知获取当前匹配项的表达式为`submatch(0)`_
 _HINT2: 匹配数字的正则表达式为`\d+`，必要时需加上转义符`\`_
 
 ### telescope
-TODO: 有待验证
 
 现有文件夹`subfolder1`, `subfolder2`，里面包含了多种格式的文本文件：
 
