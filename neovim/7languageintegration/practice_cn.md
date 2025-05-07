@@ -13,26 +13,26 @@
 
 1. 请一键折叠文件里的所有方法，效果如：
 
-TODO:
 ``` go
 //...
-func (c *Calculator) Add(x float64) {
+> func (c *Calculator) Add(x float64) {
 
-func (c Calculator) Sum() float64 { 
+> func (c Calculator) Sum() float64 { 
 
-func (c Calculator) Mean() float64 {
+> func (c Calculator) Mean() float64 {
 //...
 ```
 
 2. 请通过Telescope，快速定位到方法`StdDev`处
+_HINT: Telescope对treesitter进行了支持，可查阅资料并尝试在当前文件搜索treesitter object_
 
-3. 请一键展开方法`StdDev`，包括方法内的嵌套折叠部分也要展开
+3. 将光标一键跳转回原位
+_HINT: 2种方法，其中之一是一对很有用的快捷键_
+
+4. 跳转回`StdDev`方法，将其一键展开，包括方法内的嵌套折叠部分也要展开
 
 ## 思考题
 
-1. 如何快速得到`StdDev`方法的调用链？(调用了哪些方法，被哪些方法调用)
-
-2. 拷贝方法`StdDev`，粘贴到文件最后，会发现此时需要我们手动输入一个空行才能和上一个方法隔开。有什么办法可以优化？
-_HINT: 比如在拷贝时包含方法顶部的空行，可通过编辑treesitter-textobj实现_
-
-3. 请借助工具为代码生成一个单元测试文件
+请借助工具为方法`StdDev`生成一个单元测试，并尝试解决lsp的报错信息
+_HINT: lsp 报错sort未定义，意味着漏导了sort包，手动解决的方式是在顶部 `import{}` 内加上一行 `"sort"`，可以自动完成吗_
+_Follow Up: 测试用例也可以生成吗_
