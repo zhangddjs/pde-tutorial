@@ -32,7 +32,7 @@ _HINT: 2种方法，Telescope和vim-fugitive插件_
 2. 光标移动到`gitintegration/main`，按r键rebase
 
 问题：
-1. 在rebase时会遇到冲突，这是因为有其他分支修改了相同文件的相同代码块并被提前merge进了`gitintegration/main`，请解决它  
+1. 在rebase时会遇到冲突，这是因为有其他分支修改了相同文件的相同代码块并被提前merge进了`gitintegration/main`，请解决它(不要覆盖`gitintegration/main`分支的修改)  
 _HINT: 2种方法，Lazygit和Merge Tool_
 
 2. 解决完冲突continue后发现一直有类似的重复冲突要解决，每个commit都要解决一次，那么有没有方法减少这种重复工作？
